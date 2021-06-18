@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-	
+
 </head>
 <body>
     <div id="first" class="container">
@@ -33,19 +33,32 @@
         </header>
         <!-- Navigation Bar End -->
 
-        <!-- Background Image and Sign up/in -->
-        <main>
-            <section>
-                <h3>Welcome to TravelEasy</h3>
-                <h1>Do Come and Visit</h1>
-                <a href="Login.html" class="btn">Log In</a>
-                <a href="SignUp.html" class="btn">Sign Up</a>    
-            </section>
-        </main>
-        <!-- Background Image and Sign up/in End-->
+        <!-- Log in and Sign up -->
+        <button id="open-button">Log in</button>
+
+        <div class="form-popup" id="login-frm">
+          <form action="#" class="form-container">
+            <h1 id="form-title">Login</h1>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <p>Don't have an account, <a href="SignUp.html" target="_blank">Sign up</a></p>
+
+            <button type="submit" class="btn">Log in</button>
+            <button type="button" id="cancel" class="btn">Close</button>
+          </form>
+        </div>
+        <!-- Log in and Sign up End-->
+
+        <!-- Call button for small devices -->
+        <a href="tel:+997 755 33xx"><div id="phone"><span>Call Us</span></div></a>
+
     </div>
     <!-- First Container Ends -->
-
 
     <!-- 8 Travel Offers clickable Cards -->
     <h2 class="headline">SELECT OFFERS FOR TRAVELLING</h2>
@@ -202,12 +215,11 @@
 				    <br>
 				    <textarea name="message" class="text-input contact-input" placeholder="Message"></textarea>
 				    <br>
-				    <button type="submit" class="btn btn-big contact-btn">
+				    <button type="submit" class="contact-btn">
 					Submit
 				    </button>
                 </form>
 			</div>
-            <a href="tel:+997 755 33xx"><div id="phone">Explore more<span>  (Call us*)</span></div></a>
 		</div>
 		
 		<div class="footer-bottom">
@@ -217,5 +229,6 @@
     <!-- Footer end -->
 
     <script type="text/javascript" src="js/script.js"></script>
+
 </body>
 </html>

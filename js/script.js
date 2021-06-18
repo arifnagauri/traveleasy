@@ -1,3 +1,18 @@
+//---------Log in pop up-------------------
+const loginBtn = document.getElementById("open-button");
+
+const cancel = document.getElementById("cancel");
+
+loginBtn.onclick = function() {
+	document.getElementById("login-frm").style.display = "block";
+}
+
+cancel.onclick = function() {
+	document.getElementById("login-frm").style.display = "none";
+}
+//----------Log in Pop up End --------------
+
+
 //----------------Booking Modal----------------------------
 // Get the modal
 const bookModal = document.getElementById("b-modal");
@@ -98,7 +113,6 @@ close.onclick = function() {
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-
 	if (event.target == bookModal) {
 		bookModal.style.display = "none";
 	}
