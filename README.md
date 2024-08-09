@@ -1,2 +1,2 @@
 # traveleasy
-A dummy travel agency website developed as curriculum project.
+Simple single page UI developed using vanilla js, html & css as a learning project for css fundamentals
